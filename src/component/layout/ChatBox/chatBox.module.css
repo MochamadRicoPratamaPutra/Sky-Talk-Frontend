@@ -1,0 +1,33 @@
+.content {
+  height: 100vh;
+}
+.container {
+  padding: 2% 5%;
+}
+.input {
+  background: #fafafa;
+  border-radius: 15px;
+  width: 100%;
+  padding: 2% 5%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  /* border: 1px solid black; */
+}
+form {
+  display: flex;
+}
+.button {
+  /* position: absolute; */
+  right: 5%;
+  top: 27%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.button button {
+  background: none;
+  border: none;
+  outline: none;
+}

@@ -1,13 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+body p {
+  margin: 0;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fs-29 {
+  font-size: 29px;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fc-blue {
+  color: #7e98df;
+}
+.fc-black {
+  color: #232323;
+}
+.fc-white {
+  color: #ffffff;
+}
+.fc-grey {
+  color: #848484;
+}
+.bc-white {
+  background: #ffffff;
+}
+.bc-grey {
+  background: #fafafa;
+}
+.bc-blue {
+  background: #7e98df;
+}
+.bc-bg {
+  background: #f6f6f6;
+}
+.bc-none {
+  background: none;
+}
+a {
+  text-decoration: none;
 }

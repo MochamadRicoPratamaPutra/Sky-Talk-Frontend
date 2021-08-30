@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+.chat {
+  display: flex;
+  gap: 20px;
+}
+.img {
+  border-radius: 20px;
+  width: 64px;
+  height: 64px;
+}
+.chatContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

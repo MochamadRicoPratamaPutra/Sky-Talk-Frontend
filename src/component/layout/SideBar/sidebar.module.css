@@ -1,0 +1,162 @@
+.content {
+  width: 25%;
+  padding: 2% 2%;
+  height: 100%;
+  border-right: 1px solid #e5e5e5;
+  /* border: 1px solid black; */
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content button {
+  border: none;
+  outline: none;
+}
+.menu {
+  background: none;
+}
+.menuContainer {
+  position: relative;
+}
+.menuDrop {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 30px;
+  background: #7e98df;
+  border-radius: 35px 10px 35px 35px;
+  padding: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  white-space: nowrap;
+}
+.menuChoice {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: none;
+}
+.menuChoice img {
+  width: 20px;
+  height: 20px;
+}
+.hide {
+  display: none;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search button {
+  background: none;
+  outline: none;
+  border: none;
+}
+.searchBox {
+  padding: 7% 0 7% 10%;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+.search form {
+  position: relative;
+}
+.search form button {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.buttonNav {
+  border-radius: 20px;
+  padding: 3% 10%;
+}
+/* Profile */
+.wrapperProfile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.hide {
+  display: none;
+}
+.titleProfile {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.backProfile {
+  width: 20px;
+  height: 20px;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+.profilePic {
+  width: 82px;
+  height: 82px;
+  text-align: center;
+}
+.name {
+  text-align: center;
+}
+.account {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.account button {
+  background: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+.line {
+  width: 100%;
+  background: #f6f6f6;
+}
+.username {
+  width: 100%;
+}
+.setting {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.settingMenu {
+  display: flex;
+  gap: 30px;
+  background: none;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+.settingMenu img {
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 768px) {
+  .search {
+    flex-direction: column;
+  }
+}
