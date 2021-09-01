@@ -11,6 +11,12 @@
   align-items: center;
   gap: 20px;
 }
+.contactBox img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 20px;
+}
 .contact {
   display: flex;
   flex-direction: column;

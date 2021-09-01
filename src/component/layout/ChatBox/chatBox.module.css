@@ -1,5 +1,10 @@
 .content {
-  height: 100vh;
+  overflow: scroll;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 }
 .container {
   padding: 2% 5%;
@@ -30,4 +35,50 @@ form {
   background: none;
   border: none;
   outline: none;
+}
+.chatMessage {
+  display: flex;
+  gap: 20px;
+}
+.profilePhoto {
+  width: 54px;
+  height: 54px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.rightChat {
+  margin-left: auto;
+  align-items: center;
+}
+.messageBox {
+  background: #7e98df;
+  border-radius: 35px 35px 35px 10px;
+  padding: 20px 20px;
+  width: fit-content;
+  max-width: 50%;
+  white-space: nowrap;
+}
+.rightChat img {
+  order: 3;
+}
+.rightChatBox {
+  background: #ffffff;
+  border-radius: 35px 10px 35px 35px;
+  padding: 20px 20px;
+  width: fit-content;
+  max-width: 50%;
+  white-space: nowrap;
+}
+.empty {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.time {
+  margin-top: auto;
+}
+.rightChat .time {
+  order: -1;
 }

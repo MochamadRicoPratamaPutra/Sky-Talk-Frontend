@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   /* border: 1px solid black; */
+  background: none;
+  padding-right: 5px;
 }
 .chat {
   display: flex;
@@ -11,6 +13,7 @@
   border-radius: 20px;
   width: 64px;
   height: 64px;
+  object-fit: cover;
 }
 .chatContent {
   display: flex;

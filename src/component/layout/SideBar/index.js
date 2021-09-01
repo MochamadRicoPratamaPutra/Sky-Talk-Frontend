@@ -16,7 +16,12 @@ import Lock from '../../../assets/lock2.svg';
 import Data from '../../../assets/data.svg';
 import Chat from '../../../assets/chat.svg';
 import Device from '../../../assets/device.svg';
-const SideBar = () => {
+import { useDispatch } from 'react-redux';
+import { logout } from '../../../configs/redux/Action/userAction';
+import swal from 'sweetalert';
+import { useHistory } from 'react-router';
+// import axios from 'axios';
+const SideBar = ({ socket, friends }) => {
   const [menu, setMenu] = useState(false);
   const [profile, setProfile] = useState(true);
   const handleMenu = () => {
@@ -31,9 +36,22 @@ const SideBar = () => {
       setProfile(false);
     } else {
       setProfile(true);
-      setMenu(false)
+      setMenu(false);
     }
   };
+  const dispatch = useDispatch();
+  const history = useHistory();
+  const handleLogout = () => {
+    dispatch(logout());
+    localStorage.removeItem('token');
+    swal('Logout Success', 'You will be missed', 'success');
+    socket.disconnect();
+    setMenu(false);
+    history.push('/login');
+  };
+  // const handleContact = () => {
+  //   axios.get()
+  // }
   return (
     <div className={Style.content}>
       <div className={profile ? Style.wrapper : Style.hide}>
@@ -68,6 +86,9 @@ const SideBar = () => {
                 <img src={FAQ} alt="faq" />
                 <p className="fs-16 fc-white">SkyTalk FAQ</p>
               </button>
+              <button className={`fs-16 fc-white ${Style.menuChoice}`} onClick={handleLogout}>
+                <p>Logout</p>
+              </button>
             </div>
           </div>
         </div>
@@ -86,16 +107,17 @@ const SideBar = () => {
           <button className={`fs-20 fw-500 fc-white bc-blue ${Style.buttonNav}`}>All</button>
           <button className={`fs-20 fw-500 fc-black bc-none`}>Unread</button>
         </div>
-        <ChatCard />
-        <ChatCard />
-        <ChatCard />
-        <ChatCard />
-        <ChatCard />
-        <ChatCard />
+        {friends.map((item) => 
+          <>
+            <ChatCard name={item.name} img={item.img} />
+          </>
+        )}
       </div>
       <div className={profile ? Style.hide : Style.wrapperProfile}>
         <div className={Style.titleProfile}>
-          <button className={`fs-16 fw-500 fc-blue ${Style.backProfile}`} onClick={handleProfile}>{'<'}</button>
+          <button className={`fs-16 fw-500 fc-blue ${Style.backProfile}`} onClick={handleProfile}>
+            {'<'}
+          </button>
           <p className={`fs-24 fw-500 fc-blue`}>@wdlam</p>
         </div>
         <img src={Avatar} alt="avatar" className={Style.profilePic} />
