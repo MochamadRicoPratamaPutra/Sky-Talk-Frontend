@@ -91,6 +91,8 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  overflow: scroll;
+  height: 90vh;
 }
 .wrapperProfile input {
   border: none;
@@ -130,6 +132,7 @@
 }
 .name {
   text-align: center;
+  width: 100%;
 }
 .account {
   display: flex;
