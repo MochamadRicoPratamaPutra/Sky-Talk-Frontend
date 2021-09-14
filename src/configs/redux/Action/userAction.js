@@ -3,8 +3,8 @@ import axios from 'axios';
 export const login = (data) => async (dispatch) => {
   return new Promise((resolve, reject) => {
     const dataBody = { email: data.email, password: data.password };
-    // console.log(dataBody);
-    // console.log(process.env.REACT_APP_BASE_URL)
+    console.log(dataBody);
+    console.log(process.env.REACT_APP_BASE_URL)
     return axios
       .post(`${process.env.REACT_APP_BASE_URL}/users/login`, dataBody)
       .then((res) => {
