@@ -46,6 +46,9 @@
 .hide {
   display: none;
 }
+.errorMessage {
+  color: red;
+}
 .title {
   display: flex;
   flex-direction: row;

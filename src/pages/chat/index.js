@@ -33,6 +33,7 @@ const Chat = ({ socket }) => {
   const [friend, setFriend] = useState(null);
   const [menu, setMenu] = useState(false);
   const [profile, setProfile] = useState(true);
+  const [errorImage, setErrorImage] = useState('')
   const user = useSelector((state) => state.user.profile);
   const dispatch = useDispatch();
   const history = useHistory();
@@ -155,11 +156,16 @@ const Chat = ({ socket }) => {
   const [imgPrev, setImgPrev] = useState(null);
   const handleInputFile = (e) => {
     e.preventDefault();
-    if (e.target.files.length !== 0) {
+    if (e.target.files[0].size > 1048576 * 3) {
+      setErrorImage('File too big')
+    } else if (e.target.files[0].type !== "image/png" && e.target.files[0].type !== "image/jpg" && e.target.files[0].type !== "image/jpeg") {
+      setErrorImage('File can only be image type')
+    }else if (e.target.files.length !== 0) {
+      setErrorImage('')
       setImgPrev(URL.createObjectURL(e.target.files[0]));
+      dispatch({ type: 'CHANGE_VALUE', payload: { [e.target.name]: e.target.files[0] } });
     }
     console.log(e.target.files[0]);
-    dispatch({ type: 'CHANGE_VALUE', payload: { [e.target.name]: e.target.files[0] } });
   };
   const handleEditProfile = () => {
     dispatch(editProfile(user, imgPrev))
@@ -272,6 +278,7 @@ const Chat = ({ socket }) => {
             <input type="file" name="img" id="img" className={StyleSideBar.hide} onChange={handleInputFile} />
             <label htmlFor="img">Change profile picture</label>
           </form>
+          <p className={errorImage === '' ? StyleSideBar.hide : StyleSideBar.errorMessage}>{errorImage}</p>
           <div className={StyleSideBar.name}>
             <input className="fs-22 fw-500 fc-black" name="name" value={user.name} onChange={handleChange} />
             <p className="fs-16 fw-400 fc-grey">{user.username ? user.username : 'Please input your username'}</p>

@@ -18,10 +18,16 @@ const LoginCard = ({ type, setSocket, ...props }) => {
     password: '',
     role: 'users',
   });
+  const [passwordError, setPasswordError] = useState(false)
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
   const handleChangeRegister = (e) => {
+    if (formRegister.password.length < 7 || formRegister.password.length > 12) {
+      setPasswordError(true)
+    } else {
+      setPasswordError(false)
+    }
     setFormRegister({ ...formRegister, [e.target.name]: e.target.value });
   };
   const dispatch = useDispatch();
@@ -178,8 +184,10 @@ const LoginCard = ({ type, setSocket, ...props }) => {
               min={6}
               max={12}
             />
+            <p className={passwordError ? `fs-14 fw-400 ${Style.error}` : Style.hide}>Password must be 8 - 12 character</p>
             <button
               className={`fs-16 fw-500 fc-white bc-blue ${Style.button}`}
+              disabled={passwordError ? true : false}
               onClick={() => handleSubmit('register', formRegister)}
             >
               Register

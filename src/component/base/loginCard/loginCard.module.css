@@ -44,6 +44,9 @@
   border: none;
   outline: none;
 }
+.button:disabled {
+  background-color: #848484;
+}
 .google {
   border: 1px solid #7e98df;
 }
@@ -88,4 +91,10 @@
   padding: 5% 0%;
   outline: none;
   margin-bottom: 10px;
+}
+.error {
+  color: red;
+}
+.hide {
+  display: none;
 }
