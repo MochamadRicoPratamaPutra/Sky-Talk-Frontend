@@ -5,9 +5,9 @@
   <p align="center">
     <a href="https://skytalk.vercel.app/">View Demo</a>
     ·
-    <a href="https://github.com/19damah23/coffee-shop/issues">Report Bug</a>
+    <a href="https://github.com/MochamadRicoPratamaPutra/Sky-Talk-Frontend/issues">Report Bug</a>
     ·
-    <a href="https://github.com/19damah23/coffee-shop/pulls">Request Feature</a>
+    <a href="https://github.com/MochamadRicoPratamaPutra/Sky-Talk-Frontend/pulls">Request Feature</a>
   </p>
 
 <!-- TABLE OF CONTENTS -->
