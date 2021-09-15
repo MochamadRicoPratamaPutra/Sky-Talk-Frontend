@@ -52,7 +52,7 @@ SkyTalk, web aplication for chatting based from telegram and whatsapp.
 REACT_APP_BASE_URL = "Your Backend URL"
 ```
 
-5. Type `npm run dev`
+5. Type `npm start`
 
 <!-- RELATED PROJECT -->
 
