@@ -37,7 +37,7 @@ SkyTalk, web aplication for chatting based from telegram and whatsapp.
 
 ## Built With
 
-[![React](https://img.shields.io/badge/React-11.1.2-blue)](https://reactjs.org/)
+[![React](https://img.shields.io/badge/React-17.0.2-blue)](https://reactjs.org/)
 
 <!-- GETTING STARTED -->
 
