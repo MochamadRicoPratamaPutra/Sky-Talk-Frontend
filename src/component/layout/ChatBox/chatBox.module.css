@@ -59,6 +59,7 @@
 .chatMessage {
   display: flex;
   gap: 20px;
+  margin-bottom: 20px;
 }
 .profilePhoto {
   width: 54px;
