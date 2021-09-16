@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 300px;
 }
 .content button {
   border: none;
@@ -96,6 +97,7 @@
   align-items: center;
   overflow: scroll;
   height: 90vh;
+  width: 300px;
 }
 .wrapperProfile input {
   border: none;
@@ -205,5 +207,11 @@
 @media (max-width: 768px) {
   .search {
     flex-direction: column;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .wrapperProfile {
+    width: 100%;
   }
 }
