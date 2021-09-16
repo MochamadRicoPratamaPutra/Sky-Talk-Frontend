@@ -1,10 +1,11 @@
 .content {
   overflow: scroll;
-  height: 400px;
+  overflow-y: auto;
+  height: 380px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
 }
 .container {
   padding: 2% 5%;
@@ -17,10 +18,28 @@
   box-sizing: border-box;
   border: none;
   outline: none;
+  margin: 10px;
   /* border: 1px solid black; */
 }
-form {
+.inputBox {
   display: flex;
+  align-items: center;
+}
+.inputBox form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.submit {
+  background: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.submitLogo {
+  max-width: 20px;
+  max-height: 20px;
+  object-fit: cover;
 }
 .button {
   /* position: absolute; */
@@ -35,6 +54,7 @@ form {
   background: none;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .chatMessage {
   display: flex;
@@ -48,6 +68,7 @@ form {
 }
 .rightChat {
   margin-left: auto;
+  justify-content: flex-end;
   align-items: center;
 }
 .messageBox {

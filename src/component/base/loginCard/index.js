@@ -187,7 +187,7 @@ const LoginCard = ({ type, setSocket, ...props }) => {
             <p className={passwordError ? `fs-14 fw-400 ${Style.error}` : Style.hide}>Password must be 8 - 12 character</p>
             <button
               className={`fs-16 fw-500 fc-white bc-blue ${Style.button}`}
-              disabled={passwordError ? true : false}
+              disabled={passwordError ? true : formRegister.name === '' ? true : formRegister.email === '' ? true : false}
               onClick={() => handleSubmit('register', formRegister)}
             >
               Register

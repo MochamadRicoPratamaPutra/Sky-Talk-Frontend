@@ -353,6 +353,7 @@ const Chat = ({ socket }) => {
           messages={messages}
           handleMesage={handleMessageInput}
           handleSend={handleSendMessage}
+          message={message}
         />
       </div>
     </div>
