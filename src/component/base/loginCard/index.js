@@ -16,7 +16,7 @@ const LoginCard = ({ type, setSocket, ...props }) => {
     name: '',
     email: '',
     password: '',
-    role: 'users',
+    role: 'user',
   });
   const [passwordError, setPasswordError] = useState(false)
   const handleChange = (e) => {
