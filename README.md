@@ -17,8 +17,7 @@
   * [Screenshot](#screenshots)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Installation](#installation)
-* [Related Project](#related-project-backend)
+* [Related Project](#related-project)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 
