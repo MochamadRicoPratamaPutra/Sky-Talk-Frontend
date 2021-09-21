@@ -1,7 +1,7 @@
-<h1 align='center'>SkyTalk</h1>
 <p align="center">
   <image align="center" width="200" src='./src/assets/logo.png' />
-  </p>
+  <h1 align='center'>SkyTalk</h1>
+</p>
   <p align="center">
     <a href="https://skytalk.vercel.app/">View Demo</a>
     ·
@@ -31,8 +31,8 @@ SkyTalk, web aplication for chatting based from telegram and whatsapp.
 <p align="center">
   <image src='https://i.imgur.com/b6s84pN.png' width=400px/>
   <image src='https://i.imgur.com/i2SOD4E.png' width=400px/>
-  <image src='https://i.imgur.com/HClkFEB.png' width=400px/>
-  <image src='https://i.imgur.com/iAfKBiE.png' width=400px/>
+  <image src='https://cdn.discordapp.com/attachments/886981620186357770/888085849433075712/unknown.png' width=400px/>
+  <image src='https://cdn.discordapp.com/attachments/886981620186357770/888086276669075466/unknown.png' width=400px/>
 </p>
 
 ## Built With
