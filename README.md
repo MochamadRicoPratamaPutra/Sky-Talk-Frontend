@@ -29,8 +29,10 @@ SkyTalk, web aplication for chatting based from telegram and whatsapp.
 ## Screenshots
 <p align="center">
   <image src='https://i.imgur.com/b6s84pN.png' width=400px/>
+  <image src='https://i.imgur.com/g9mzSMf.png' width=400px/>
   <image src='https://i.imgur.com/i2SOD4E.png' width=400px/>
-  <image src='https://cdn.discordapp.com/attachments/886981620186357770/888085849433075712/unknown.png' width=400px/>
+  <image src='https://cdn.discordapp.com/attachments/886981620186357770/892623460558331955/unknown.png' width=400px/>
+  <image src='https://cdn.discordapp.com/attachments/886981620186357770/892623049621405756/unknown.png' width=400px/>
   <image src='https://cdn.discordapp.com/attachments/886981620186357770/888086276669075466/unknown.png' width=400px/>
 </p>
 
